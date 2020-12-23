@@ -15,6 +15,7 @@ export class BarchartComponent implements OnInit {
     chart;
     verticalAxis;
     horizontalAxis;
+    Ticks;
 
     viewBox;
 
