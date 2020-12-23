@@ -1,10 +1,10 @@
 
-<svg version="1.1" viewBox="0 0 300 500">
+<svg version="1.1" [attr.viewBox]="viewBox">
 
-<rect *ngFor="let bar of data; index as i"
-    class="programming"
-    [attr.x]="i * 25" [attr.y]="height - bar"
-    width="20" [attr.height]="bar" />
+<rect *ngFor="let bar of bars"
+    [ngClass]="bar.clases"
+    [attr.x]="bar.x" [attr.y]="bar.y"
+    [attr.width]="bar.width" [attr.height]="bar.height" />
 
 </svg>
 
