@@ -2,10 +2,14 @@ svg {
     display: block;
     margin: 100px auto;
 
-    height: 70vh;
-    background: #eee;
+    height: 80vh;
+    background: #f9f9f9;
 }
 
 .programming {
-    fill: LightGreen;
+    fill: Teal;
+}
+
+.axis {
+    stroke: #888;
 }
