@@ -72,7 +72,7 @@ export class SankeyComponent implements OnInit {
         this.b2 = { x: this.o.x + Math.abs(this.p.x - this.o.x)/this.c, y: this.p.y }
         this.vein =
         `M ${this.o.x} ${this.o.y}
-         C ${this.b1.x} ${this.b1.y} ${this.b2.x} ${this.b2.y} ${this.p.x} ${this.p.y}`;
+         C ${this.b1.x+50} ${this.b1.y} ${this.b2.x+50} ${this.b2.y} ${this.p.x} ${this.p.y}`;
     }
     calcVein2(){
         this.calcRat();
@@ -81,8 +81,8 @@ export class SankeyComponent implements OnInit {
         this.b1 = { x: this.p.x - Math.abs(this.p.x - this.o.x)/this.c, y: this.o.y }
         this.b2 = { x: this.o.x + Math.abs(this.p.x - this.o.x)/this.c, y: this.p.y }
         this.vein2 =
-        `M ${this.o.x-20} ${this.o.y+20}
-         C ${this.b1.x-20} ${this.b1.y+20} ${this.b2.x-20} ${this.b2.y+20} ${this.p.x-20} ${this.p.y+20}`;
+        `M ${this.o.x} ${this.o.y+100}
+         C ${this.b1.x-50} ${this.b1.y+100} ${this.b2.x-50} ${this.b2.y+100} ${this.p.x} ${this.p.y+100}`;
     }
 
 }
