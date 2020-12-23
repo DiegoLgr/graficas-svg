@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarchartComponent implements OnInit {
 
-  constructor() { }
+    height = 500;
+    data = [260, 300, 10, 489, 63];
 
-  ngOnInit(): void {
-  }
+    constructor() { }
+
+    ngOnInit(): void {
+    }
 
 }
