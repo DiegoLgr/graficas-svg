@@ -1,0 +1,11 @@
+svg {
+    display: block;
+    margin: 100px auto;
+
+    height: 70vh;
+    background: #eee;
+}
+
+.programming {
+    fill: LightGreen;
+}
