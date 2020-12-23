@@ -61,9 +61,7 @@ export class SankeyComponent implements OnInit {
     calcRat(){
         const Ay = Math.abs(this.p.y - this.o.y);
         const Ax = Math.abs(this.p.x - this.o.x);
-        const diff = Math.abs(Ay-Ax);
-        const rat = diff/Ax + diff/Ay;
-        this.c = 2 + rat;
+        this.c = 1 + 1.4*Ay/Ax;
     }
 
     calcVein(){
