@@ -1,23 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-barchart',
-  templateUrl: './barchart.component.html',
-  styleUrls: ['./barchart.component.css']
+  selector: 'app-actividad',
+  templateUrl: './actividad.component.html',
+  styleUrls: ['./actividad.component.css']
 })
-export class BarchartComponent implements OnInit {
-    data = [160, 200, 10, 289, 63];
+export class ActividadComponent implements OnInit {
 
     height = 500;
     width = 500;
     axisw = 3;
     margl = 140;
     margb = 75;
-    viewBox;
-
     chart;
     verticalAxis;
     horizontalAxis;
+    Ticks;
+
+    viewBox;
+
+    data = [160, 200, 10, 289, 63];
     bars;
 
     constructor() {
@@ -69,3 +71,4 @@ export class BarchartComponent implements OnInit {
         console.log("una barra", bar);
     }
 }
+

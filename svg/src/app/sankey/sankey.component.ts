@@ -26,24 +26,6 @@ export class SankeyComponent implements OnInit {
     }
 
 
-    oninputC(v){
-        this.c = v;
-        this.calcVein();
-        this.calcVein();
-    }
-    oninputO(v){
-        this.o.x = Number(v);
-        this.calcRat();
-        this.calcVein();
-        this.calcVein();
-    }
-
-    oninputP(v){
-        this.p.x = Number(v);
-        this.calcRat();
-        this.calcVein();
-        this.calcVein();
-    }
     distanciaY(v){
         this.o.y = 500 - v/2;
         this.p.y = 500 + v/2;
